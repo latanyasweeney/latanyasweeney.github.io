@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <title>My Personal Profile Web Page</title>
+  <style> 
+    /* --- CSS Variables  --- */
+    :root {
+      --primary-color: rgb(149, 102, 102);   /* nav + footer background */
+      --secondary-color: rgb(240, 146, 223); /* hover color */
+      --heading-color: rgb(120, 45, 78);     /* section headings */
+      --table-header: rgb(240, 200, 220);    /* table header */
+      --background-color: rgb(255, 192, 232);/* page background */
+      --text-color: black;                   /* default text */
+      --font-main: Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--background-color);
+      font-family: var(--font-main);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* --- Navigation Bar --- */
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: var(--primary-color);
+    }
+    nav ul li { 
+      float: left;
+    }
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      background-color: var(--secondary-color);
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 200px;          
+      width: 200px;           
+      object-fit: cover;      
+      border-radius: 50%;     
+    }
+
+    /* --- Sections --- */
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: var(--heading-color);
+    }
+
+    /* --- Lists --- */
+    ul {
+      margin-left: 20px;
+    }
+    ul ul {
+      list-style-type: circle;
+      margin-left: 20px;
+    }
+    ol {
+      padding-left: 20px;
+    }
+
+    /* --- Table --- */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table th, table td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    table th {
+      background-color: var(--table-header);
+    }
+
+    /* --- Footer --- */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: var(--primary-color);
+      color: white;
+    }
+
+    footer a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    footer img {
+      width: 60px;
+      height: auto;
+      vertical-align: middle;
+      transition: transform 0.3s;
+    }
+    footer img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body> 
+
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hobbies">Hobbies</a></li> 
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contacts">Contact Me</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </nav>
+    <img src="images/IMG_6257.jpg" alt="Picture of me">
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="hobbies">
+      <h2>HOBBIES</h2>
+      <ul> 
+        <li>Cooking
+          <ul> 
+            <li>Pork</li>
+            <li>Rice and peas</li>
+            <li>Fry Chicken</li>
+          </ul>
+        </li>
+        <li>Cleaning</li>
+        <li>Listening to music
+          <ul>
+            <li>Souls</li>
+            <li>R&B</li>
+            <li>Pop</li>
+            <li>Reggae</li>
+          </ul>
+        </li>
+        <li>Binge watching series
+          <ul>
+            <li>Game of Thrones (Best series ever)</li>
+            <li>The Flash</li>
+            <li>The Fosters</li>
+          </ul>
+        </li>
+        <li>TikTok live streaming</li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <ol> 
+        <li>My name is Latanya Sweeney.</li>
+        <li>I was born July 2, 2002 which means I'm a Cancer.</li>
+        <li>I love nature or simple things.</li>
+        <li>I love getting dressed up and going out with my friends.</li>
+        <li>My biggest goal in this life is to have peace and be happy.</li>
+      </ol>
+    </section>
+
+    <section id="contacts">
+      <h2>CONTACT ME</h2>
+      <p><a href="mailto:sweeneylatanya392@gmail.com">Send Email</a></p>
+    </section>
+
+    <section id="resources">
+      <h2>RESOURCES</h2>
+      <table>  
+        <tr>
+          <th>Hobby Name</th>
+          <th>Related External Link</th>
+        </tr>
+        <tr>
+          <td>Cooking</td>
+          <td><a href="https://www.allrecipes.com/" target="_blank">All Recipes</a></td>
+        </tr>
+        <tr>
+          <td>Music</td>
+          <td><a href="https://www.spotify.com/" target="_blank">Spotify</a></td>
+        </tr> 
+        <tr> 
+           <td>Cleaning</td> 
+           <td><a href="https://hiproace.com/collections/cleaning-supplies" target="_blank">Cleaning</a></td>
+        </tr>
+        <tr>
+            <td>TV Shows</td>
+            <td><a href="https://www.netflix.com/" target="_blank">Netflix</a></td>
+        </tr>
+        <tr> 
+            <td>TikTok</td>
+            <td><a href="https://www.tiktok.com/" target="_blank">TikTok</a></td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <a href="https://www.tiktok.com/foryou?lang=en" target="_blank"><img src="socials/Screenshot.png" alt="TikTok"></a>
+    <a href="https://www.instagram.com/" target="_blank"><img src="socials/instagram.png" alt="Instagram"></a>
+    <p>© 2025 My Hobbies Hub | Created by Latanya. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
